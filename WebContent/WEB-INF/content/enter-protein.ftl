@@ -1,0 +1,18 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Velocity template</title>
+</head>
+<body>
+	<h1>Enter Protein Freemarker</h1>
+	
+	<@s.form>
+	<@s.textfield name= "enteredProtein"/>
+	<@s.submit value="Enter"/>
+		</@s.form>
+
+	<div> Amount entered: <@s.property value = "enteredProtein"/></div>
+	<div>Total for day: 100 grams</div>
+	<div><@s.property value="goalText" /></div>
+</body>
+</html>
